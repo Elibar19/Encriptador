@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300&family=Roboto:ital,wght@0,300;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300&family=Roboto:ital,wght@0,300;0,700;1,100;1,300;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Encriptador de texto</title>
+    <script type="text/javascript" src="index.js"></script>
 </head>
+
 <body>
     <h1><img src="Vector.svg" alt="Logo de la pagina"></h1>
 
-    <div class="area-encriptado">
-        <input type="text" autocapitalize="none" placeholder="Ingrese el texto aqui" autofocus required></inp>
+    <div class="area-encriptado" >
+        <textarea cols="50" id="inputTexto" type="text" autocapitalize="none" placeholder="Ingrese el texto aqui" autofocus required></textarea>
     </div>
-    
+
 
     <div class="mensaje-cifrado">
         <img id="muñeco" src="Muñeco.svg" alt="Muñeco buscando texto">
-        <p class="texto1">Ningún mensaje fue encontrado</p>
-        <p class="texto2">Ingrese el texto que desees encriptar o desencriptar</p>
-
+        <p id="texto1" class="texto1">Ningún mensaje fue encontrado</p>
+        <p id="texto2" class="texto2">Ingrese el texto que desees encriptar o desencriptar</p>
+        <button id="copy" type="button" value="Copiar" onclick="copiar()">Copiar</button>
     </div>
 
     <div class="texto-botones">
-        <img  src="Exclamacion.svg" alt="icono de exclamacion">
+        <img src="Exclamacion.svg" alt="icono de exclamacion">
         <p>Solo letras minúsculas y sin acentos</p>
     </div>
-    
+
     <div class="botones">
-        <input id="encriptar" type="button" value="Encriptar">
-        <input id="desencriptar" type="button" value="Desencriptar">
+        <input id="encriptar" type="button" value="Encriptar" onclick="encriptar()"/>
+        <input id="desencriptar" type="button" value="Desencriptar" onclick="desencriptar()"/>
     </div>
 
-</body> 
+    
+</body>
+
 </html>
