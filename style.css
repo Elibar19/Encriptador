@@ -1,0 +1,282 @@
+body {
+
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 img {
+    position: relative;
+    top: 40px;
+    left: 84px;
+
+}
+
+
+.area-encriptado input {
+    background: none;
+    height: 48px;
+    width: 50%;
+    left: 12%;
+    top: 168px;
+    border-radius: none;
+    border: none;
+    position: absolute;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 150%;
+
+}
+
+.area-encriptado input::placeholder {
+    color: #0A3871;
+}
+
+.area-encriptado input:focus {
+    outline: none;
+    border: none;
+}
+
+.mensaje-cifrado {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    width: 20%;
+    height: 90%;
+    top: -20px;
+    left: 75%;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    padding: 20px;
+    color: #0A3871;
+}
+
+#muñeco {
+    width: 90%;
+    height: 304px;
+    margin-bottom: 20px;
+}
+
+.texto1 {
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1.2;
+    text-align: center;
+    color: #343A40;
+}
+
+.texto2 {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+    color: #495057;
+}
+
+.botones {
+    position: absolute;
+    bottom: 72px;
+    left: 12%;
+    width: 60%;
+
+}
+
+.texto-botones {
+    position: absolute;
+    bottom: 140px;
+    left: 12%;
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+}
+
+.texto-botones p {
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #495057;
+    opacity: 0.8;
+}
+
+
+#encriptar {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 67px;
+    width: 45%;
+    padding: 24px;
+    background: #0A3871;
+    border-radius: 24px;
+    border: none;
+    margin-right: 16px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.15);
+}
+
+#desencriptar {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #0A3871;
+    height: 67px;
+    width: 45%;
+    padding: 24px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.15);
+
+    margin-left: 16px;
+}
+
+/*media-queries para tablet*/
+
+@media screen and (max-width: 900px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+    h1 {
+        width: 100%;
+    }
+    .area-encriptado input {
+        height: 48px;
+        width: 100%;
+        position: absolute;
+        left: 5%;
+        top: 30%;
+    }
+
+    .mensaje-cifrado {
+
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        width: 90%;
+        height: 10%;
+        top: 75vh;
+        left: 0;
+        right: 0;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+        padding: 20px;
+        color: #0A3871;
+    }
+
+    #muñeco {
+        display: none;
+    }
+
+    .botones {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        left:0;
+        top: 55vh;
+        width: 100%;
+        
+    }
+
+    .botones#encriptar {
+        width: 100%;
+        height: 67px;
+    }
+
+    .botones#desencriptar {
+        width: 100%;
+        height: 67px;
+    }
+
+    .texto-botones {
+        display:flex;
+        position: absolute;
+        width: 90%;
+        left: 40px;
+        top: 50vh;
+
+    }
+    
+}
+
+
+@media screen and (max-width:575px) {
+    
+    h1 {
+        width: 100%;
+
+    }
+    
+
+    .area-encriptado input::placeholder {
+        font-size: 0.8em;
+        font-weight: 400;
+        width: auto;
+    }
+
+    .texto1 {
+        margin: 5px auto;
+        font-size: 0.9em;
+    }
+
+    .texto2 {
+        font-size: 0.8em;
+    }
+
+    .botones {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 55%;
+        left: 0;
+        right: 0%;
+        width: 100%;
+        height: 32%;
+        
+      }
+
+      .mensaje-cifrado {
+        width: 80%;
+        top: 73vh;
+        bottom:0;
+      }
+    
+      #encriptar,  #desencriptar {
+        width: 90%;
+        margin-bottom: 1em;
+        margin-right: 0;
+        margin-left: 0;
+        height: 20%;
+        padding: 0;
+      }
+
+      .texto-botones {
+        display:flex;
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        right: 0;
+        top: 37%;
+
+    }
+
+}
