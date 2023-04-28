@@ -38,7 +38,7 @@ function desencriptar() {
     document.getElementById("copy").style.display = "inherit"
     }
     else {
-        alert("No hay ningun texto para descifrar")
+        alert("No hay ningún texto para descifrar")
     }
 }
 
