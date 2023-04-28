@@ -121,7 +121,7 @@ h1 img {
 
 .texto-botones {
     position: absolute;
-    bottom: 140px;
+    bottom: 135px;
     left: 12%;
     display: flex;
     align-items: center;
@@ -300,7 +300,8 @@ footer {
         position: absolute;
         width: 90%;
         left: 40px;
-        top: 50vh;
+        top: 55%;
+        height: 5%;
 
     }
 
@@ -374,7 +375,7 @@ footer {
         width: 90%;
         left: 5%;
         right: 0;
-        top: 28%;
+        top: 53%;
 
     }
 
